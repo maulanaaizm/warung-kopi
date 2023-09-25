@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -72,6 +76,7 @@ body {
   color: #fff;
   margin: 0 0.5rem;
   font-size: 1.8rem;
+  transition: 0.2s;
 }
 
 .navbar .navbar-extra a:hover {
@@ -95,6 +100,8 @@ body {
   transform: scaleY(0);
   transform-origin: top;
   transition: 0.3s;
+  border-radius: 10px;
+  overflow-x: hidden;
 }
 
 .navbar .search-form.active {
@@ -157,13 +164,18 @@ body {
   font-size: 1.2rem;
 }
 
-.shopping-cart .remove-item {
+.shopping-cart .cart-item .bi::before {
+  font-size: 1.8rem;
+}
+
+.shopping-cart .cart-item .bi {
   position: absolute;
   right: 1rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.shopping-cart .remove-item:hover {
+.shopping-cart .bi:hover {
   color: var(--primary);
 }
 
@@ -215,14 +227,22 @@ body {
 }
 
 .hero .content .cta {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.4rem;
   color: #fff;
   background-color: var(--primary);
-  border-radius: 0.5rem;
+  border-radius: 10px;
   box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.hero .content .cta:hover {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: transparent;
 }
 
 /* About Section */
@@ -313,6 +333,9 @@ body {
 }
 
 /* Products Section */
+.products p {
+  text-align: center;
+}
 .products .row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -324,6 +347,7 @@ body {
   text-align: center;
   border: 1px solid #666;
   padding: 2rem;
+  border-radius: 13px;
 }
 
 .products .product-icons {
@@ -343,6 +367,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
 }
 
 .products .product-icons a:hover {
@@ -394,12 +419,12 @@ body {
 
 .contact .row form {
   flex: 1 1 45rem;
-  padding: 5rem 2rem;
+  padding: 5rem 0;
   text-align: center;
 }
 
 .contact .row form .input-group {
-  width: 80%;
+  width: 70%;
   height: 15%;
   display: flex;
   align-items: center;
@@ -422,13 +447,22 @@ body {
 }
 
 .contact .row form .btn {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: inline-block;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   font-size: 1.7rem;
   color: #fff;
   background-color: var(--primary);
   cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.contact .row form .btn:hover {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: transparent;
 }
 
 /* Footer */
@@ -446,10 +480,18 @@ footer .socials {
 footer .socials a {
   color: #fff;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  border: 1px solid transparent;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
-footer .socials a:hover,
+footer .socials a:hover {
+  border: 1px solid var(--bg);
+  color: var(--bg);
+}
+
 footer .links a:hover {
   color: var(--bg);
 }
@@ -460,8 +502,9 @@ footer .links {
 
 footer .links a {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 0.7rem 1rem;
+  transition: 0.3s;
 }
 
 footer .credit {
@@ -491,6 +534,7 @@ footer .credit {
   border: 1px solid #666;
   width: 80%;
   animation: animateModal 0.5s;
+  border-radius: 13px;
 }
 
 .modal-container .close-icon {
@@ -545,6 +589,9 @@ footer .credit {
   }
   #hamburger-menu {
     display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+    top: 3px;
   }
   .navbar .navbar-nav {
     position: absolute;
@@ -608,16 +655,20 @@ footer .credit {
     font-size: 1.2rem;
   }
 
-  .contact .row {
-    flex-wrap: wrap;
+  .contact .row form {
+    padding-top: 4rem;
   }
 
-  .contact .row form {
-    padding-top: 0;
+  .contact .row form .input-group {
+    width: 80%;
+  }
+
+  .contact .row form .input-group i {
+    font-size: 1.6rem;
   }
 
   .modal-container {
-    height: 55%;
+    height: 60%;
   }
   .modal-content {
     flex-wrap: wrap;
@@ -629,9 +680,17 @@ footer .credit {
   html {
     font-size: 55%;
   }
+
+  .shopping-cart {
+    width: 28rem;
+  }
+
+  .contact .row form .input-group i {
+    font-size: 1.5rem;
+  }
 }
 
-/* MOdal Animation */
+/* Modal Animation */
 @keyframes animateModal {
   from {
     top: -300px;
