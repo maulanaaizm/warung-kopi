@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ini Warung</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="" class="navbar-logo">kenangan<span>senja</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#product">Produk</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i class="bi bi-search"></i></a>
+        <a href="#" id="shopping-cart-button"><i class="bi bi-cart3"></i></a>
+        <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
+      </div>
+
+      <!-- Search Form -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i class="bi bi-search"></i></label>
+      </div>
+
+      <!-- Shopping cart-->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/product/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, inventore.</p>
+        <a href="#" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2><span>Tentang</span>Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentangkami.jpg" alt="tentang kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih kopi kami?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur nobis nemo quaerat omnis repellat.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae aliquid suscipit velit fugit sequi corporis dolor pariatur, omnis accusamus magni?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span>Kami</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde a ipsa quidem, delectus ab!</p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/menu/1.jpg" alt="Espresso" class="menu-card-img" />
+          <h3 class="menu-card-title">-Espresso-</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/2.jpg" alt="Latte" class="menu-card-img" />
+          <h3 class="menu-card-title">-Latte-</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/3.jpg" alt="Cappuccino" class="menu-card-img" />
+          <h3 class="menu-card-title">-Cappuccino-</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/4.jpg" alt="Americano" class="menu-card-img" />
+          <h3 class="menu-card-title">-Americano-</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/5.jpg" alt="Black Coffe" class="menu-card-img" />
+          <h3 class="menu-card-title">-Black Coffe-</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/6.jpg" alt="Doppio Coffe" class="menu-card-img" />
+          <h3 class="menu-card-title">-Doppio Coffe-</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="product">
+      <h2><span>Produk Unggulan </span>Kami</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, numquam sequi pariatur temporibus voluptatem cum!</p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href=""><i class="bi bi-cart3"></i></a>
+            <a href="" class="item-detail-button"><i class="bi bi-eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/1.jpg" alt="" />
+          </div>
+          <div class="product-content">
+            <h3>Coffe Beans 1</h3>
+            <div class="product-stars">
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <div class="product-price">IDR 30k <span>IDR 55k</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href=""><i class="bi bi-cart3"></i></a>
+            <a href="" class="item-detail-button"><i class="bi bi-eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/1.jpg" alt="" />
+          </div>
+          <div class="product-content">
+            <h3>Coffe Beans 1</h3>
+            <div class="product-stars">
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <div class="product-price">IDR 30k <span>IDR 55k</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href=""><i class="bi bi-cart3"></i></a>
+            <a href="" class="item-detail-button"><i class="bi bi-eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/1.jpg" alt="" />
+          </div>
+          <div class="product-content">
+            <h3>Coffe Beans 1</h3>
+            <div class="product-stars">
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+            </div>
+            <div class="product-price">IDR 30k <span>IDR 55k</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2><span>Kontak</span>kami</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, optio!</p>
+
+      <div class="row">
+        <form action="">
+          <div class="input-group">
+            <i class="bi bi-person"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i class="bi bi-envelope"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i class="bi bi-phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">kirim pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="socials">
+        <a href="https://twitter.com/maulana_aizm/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://instagram.com/maulana_aizm/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://facebook.com/maulanaaizm/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/maulanaaizm/" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#product">Produk</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>&copy; Copyright 2023.</p>
+      </div>
+    </footer>
+
+    <!-- Modal Box Item Detail -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i class="bi bi-x"></i></a>
+        <div class="modal-content">
+          <img src="img/product/1.jpg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat vero atque fugit debitis ducimus dolore repellat incidunt ut! Adipisci eum cum illo dolor animi sint.</p>
+            <div class="product-stars">
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star-fill star-full"></i>
+              <i class="bi bi-star star-full"></i>
+            </div>
+            <div class="product-price">IDR 30k <span>IDR 55k</span></div>
+            <a href=""><i class="bi bi-cart3"></i><span>add to cart</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
